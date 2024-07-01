@@ -1,0 +1,16 @@
+﻿@model List<Book>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@foreach (Book book in Model)
+{
+    <p>@book.Title <a href="/Books/Show/@book.Id">Show your Order</a></p>
+    
+    
+}
+
+
+<a href="/Books/Create">Create book</a>
